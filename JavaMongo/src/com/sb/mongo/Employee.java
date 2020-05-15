@@ -50,7 +50,6 @@ public class Employee {
 		collection.insertMany(documents);
 		System.out.println("collection created successfully");
 		
-		System.out.println(collection.count());
 		
 		}
 

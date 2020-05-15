@@ -13,7 +13,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Indexes;
 
-public class CreateConnection {
+public class Company {
 
 	public static void main(String[] args) {
 		
@@ -26,8 +26,7 @@ public class CreateConnection {
 	System.out.println("Credential ::"+credintial);
 	
 	
-	///creating collection
-	//db.createCollection("sampleCollection");
+	
 	db.createCollection("company");
 	
 	MongoCollection<Document> collection = db.getCollection("company");
@@ -53,9 +52,6 @@ public class CreateConnection {
 		i++;
 	}
 	
-	collection.createIndex(Indexes.ascending("name"));
-	
-	System.out.println(collection.count());
-	
+		
 	}
 }
